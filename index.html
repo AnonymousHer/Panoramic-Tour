@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehmet Akif İnan Anaokulu - Sanal Tur</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="panorama"></div>
+    
+    <!-- Kontrol Paneli -->
+    <div class="control-panel">
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="Okul Logo" class="logo">
+        </div>
+        <div class="scene-list">
+            <select id="scene-select">
+                <option value="bahce">Okul Bahçesi</option>
+                <option value="giris">Anaokulu Girişi</option>
+                <option value="yemekhane1">Yemekhane (Açı 1)</option>
+                <option value="yemekhane2">Yemekhane (Açı 2)</option>
+                <option value="koridor">Anaokulu Koridorları</option>
+                <option value="sinif1">Sınıf 1</option>
+                <option value="sinif2">Sınıf 2</option>
+                <option value="oyun1">Oyun Alanı 1</option>
+                <option value="oyun2">Oyun Alanı 2</option>
+                <option value="oyun3">Oyun Alanı 3</option>
+                <option value="oyun4">Oyun Alanı 4</option>
+                <option value="oyun5">Oyun Alanı 5</option>
+                <option value="anaokul-bahce1">Anaokulu Bahçesi 1</option>
+                <option value="anaokul-bahce2">Anaokulu Bahçesi 2</option>
+            </select>
+        </div>
+        <div class="control-buttons">
+            <button id="fullscreen-btn" title="Tam Ekran">
+                <i class="fas fa-expand"></i>
+            </button>
+            <button id="autoplay-btn" title="Otomatik Döndürme">
+                <i class="fas fa-sync"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

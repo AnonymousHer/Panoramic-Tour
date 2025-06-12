@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#panorama {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.control-panel {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 1000;
+}
+
+.logo-container {
+    width: 100px;
+    height: 50px;
+}
+
+.logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.scene-list select {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background: white;
+    cursor: pointer;
+    min-width: 200px;
+}
+
+.control-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.control-buttons button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.control-buttons button:hover {
+    background: #45a049;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+    .control-panel {
+        flex-direction: column;
+        bottom: 10px;
+        padding: 10px;
+    }
+
+    .scene-list select {
+        min-width: 150px;
+    }
+
+    .logo-container {
+        width: 80px;
+        height: 40px;
+    }
+}
+
+/* Pannellum Özelleştirmeleri */
+.pnlm-container {
+    background: #000;
+}
+
+.pnlm-controls {
+    opacity: 0.8;
+}
+
+.pnlm-controls:hover {
+    opacity: 1;
+} 
