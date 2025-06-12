@@ -56,4 +56,4 @@ Projeyi geliştirmek için:
 
 ## Lisans
 
-Bu proje [MIT lisansı](LICENSE) altında lisanslanmıştır. 
+Bu proje [MIT lisansı](LICENSE) altında lisanslanmıştır.
